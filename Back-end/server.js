@@ -13,7 +13,7 @@ app.use(bodyParsr.json());                    //to pass the data in json format
 
 const URL = process.env.MONGODB_URL;          //config the mongodb url
 
-mongoose.connect(URL, )                        //connect with mongodb);
+mongoose.connect(URL)                        //connect with mongodb);
 
 const connection  = mongoose.connection;      //asigning the connection function in mongoose
 
