@@ -21,6 +21,10 @@ connection.once("open",()=>{
     console.log(`Mongodb Connection Success!`) 
 });
 
+connection.on('error',()=>{
+    console.log(`error with connecting MongoDB`); //if there is an error console.log  it
+})
+
 app.use('/student',studentRouter);
 
 const port = process.env.PORT || 4000         // set up the port. if there any availabe env port use It.
