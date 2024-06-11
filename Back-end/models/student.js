@@ -5,15 +5,15 @@ const Schema = mongoose.Schema;
 const studentSchema = new Schema({
     name :{
         type : String,
-        reqired : true
+        required : true
     },
     age :{
         type : Number,
-        reqired : true
+        required : true
     },
     gender :{
         type : String,
-        reqired : true
+        required : true
     }
 });
 
